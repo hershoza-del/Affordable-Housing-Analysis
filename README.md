@@ -23,7 +23,7 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Source | [Affordable Housing Production by Project](https://data.cityofnewyork.us/d/hq68-rnsi), NYC Department of Housing Preservation and Development (HPD) |
 | Coverage | Projects that started after January 1, 2014 and count toward the *Housing New York* / *Housing Our Neighbors* plans |
 | Rows | 5,928 projects (none dropped; every project had at least 1 counted unit) |
-| Key fields | Units by income tier, total units, counted (affordable) units, program group, start date, extended-affordability flag |
+| Key fields | units by income tier, total units, counted (affordable) units, program group, start date, extended-affordability flag |
 
 ## Findings
 
@@ -35,6 +35,12 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Medium (11–100 units) | 31.5% | 68.5% |
 | Large (100+ units) | 60.5% | 39.5% |
 
+- Projects fall into two groups: **100% affordable**, or **mixed-income at about 20–30% affordable**. Few projects land in between.
+- The 20–30% band matches the city's rules. In fact, policies like Mandatory Inclusionary Housing (MIH) and the 421-a / Affordable New York tax break require developers to set aside 25-30% of a building's units to be affordable and income-restricted.
+- Bigger projects tend to have a smaller affordable share (Spearman ρ = −0.34).
+- **Medium projects (11–100 units) are the most likely to be mixed-income:** only 31.5% are fully affordable, compared with 74.5% of small projects and 60.5% of large projects (χ² = 906, Cramér's V = 0.39).
+- Logistic regression: **each time a project doubles in size, its odds of being 100% affordable drop by about 23%.**
+
 ### Question 2: Which income levels receive the most units?
 
 | Income tier | % of AMI | Share of affordable units |
@@ -45,6 +51,12 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Moderate | 81–120% | 6.1% |
 | Middle | 121–165% | 14.2% |
 
+- **Low income gets the largest share. Moderate income gets the smallest.**
+- Units are not split evenly across tiers (χ² goodness-of-fit, Cohen's w = 0.49). All 10 pairs of tiers differ within projects (Friedman + Holm-adjusted paired Wilcoxon tests).
+- The mix depends on the program (Cramér's V = 0.28):
+  - **Multifamily Finance** serves the lowest incomes most: 56% of its units go to Extremely Low or Very Low.
+  - **Multifamily Incentives** (tax-incentive and inclusionary projects) puts **38% of its units in the Middle tier.** This fits 421-a options that allowed affordable units at up to 130% of AMI.
+
 ### Question 3: How do program groups differ in size?
 
 | Program | Projects | Median affordable units |
@@ -54,3 +66,5 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Multifamily Incentives | 2,742 | 9 |
 | Homeowner Assistance | 1,944 | 1 |
 
+- **Program explains about 73% of the variation in project size** (Welch's ANOVA on log units, η² = 0.73). Every pair of programs differs (Tukey HSD), and Kruskal-Wallis confirms this without assuming normality.
+- After controlling for start year and extended affordability, the gaps barely change. Start year has no effect. Extended-affordability-only projects are about 48% larger.
