@@ -7,8 +7,9 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 - **Program and size are tangled together.** Homeowner Assistance projects are almost all 1-unit and 100% affordable, so they drive much of the "small projects are fully affordable" result. A next step is to rerun Q1 within each program.
 - **With n = 5,928, almost every test is significant.** I report effect sizes (V, w, η², odds ratios) so the reader can judge how large each difference is.
 - **Unit counts are not people or rents.** A "low-income" unit at 80% AMI can still rent for more than many low-income households can pay.
-- **Preservation and new construction are counted together** in this dataset, so these numbers are not net new supply.
-- **MOST IMPORTANTLY:** these results down below are solely based from this dataset.
+- **Preservation and new construction are counted together** In this dataset, so these numbers are not net new supply.
+- **Not all values were taken into account** In this dataset, not all 5,928 projects listed every numerical value in a given numerical column. Any project that yielded no numerical value was taken into account as **0**.
+- **MOST IMPORTANTLY:** Based on my discretion, not all categorical/numerical values from the original dataset were taken into account and therefore have been deleted. Also, the statistical results down below are solely based from this dataset.
 
 ## Approach
 
@@ -55,7 +56,7 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 
 ### Question 2: Which income levels receive the most units?
 
-| Income tier | % of AMI | Share of affordable units |
+| Income tier | % of AMI (Area Median Income) | Share of affordable units |
 |---|---|---|
 | Extremely Low | 0–30% | 18.4% |
 | Very Low | 31–50% | 27.1% |
