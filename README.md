@@ -25,25 +25,25 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Rows | 5,928 projects (none dropped; every project had at least 1 counted unit) |
 | Key fields | Units by income tier, total units, counted (affordable) units, program group, start date, extended-affordability flag |
 
-**Income tiers.** HPD defines them as a share of Area Median Income (AMI):
-
-| Tier | % of AMI |
-|---|---|
-| Extremely Low | 0–30% |
-| Very Low | 31–50% |
-| Low | 51–80% |
-| Moderate | 81–120% |
-| Middle | 121–165% |
-
 ## Findings
 
 ### Question 1: How much of each project is affordable?
 
-
+| Project size | 100% affordable | Mixed-income |
+|---|---|---|
+| Small (1–10 units) | 74.5% | 25.5% |
+| Medium (11–100 units) | 31.5% | 68.5% |
+| Large (100+ units) | 60.5% | 39.5% |
 
 ### Question 2: Which income levels receive the most units?
 
-
+| Income tier | % of AMI | Share of affordable units |
+|---|---|---|
+| Extremely Low | 0–30% | 18.4% |
+| Very Low | 31–50% | 27.1% |
+| Low | 51–80% | **34.1%** |
+| Moderate | 81–120% | 6.1% |
+| Middle | 121–165% | 14.2% |
 
 ### Question 3: How do program groups differ in size?
 
