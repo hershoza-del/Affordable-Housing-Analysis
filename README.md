@@ -43,10 +43,15 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Chi-square (size group × fully affordable) | χ²(2) = 906.0, p < 0.001, Cramér's V = 0.39 | Size group and being 100% affordable are related (moderate to strong) |
 | Logistic regression (fully affordable ~ log size) | b = −0.376, z = −25.7, p < 0.001; OR per doubling = 0.77 | Each time size doubles, the odds of being 100% affordable drop by about 23% |
 
-- Projects fall into two groups: **100% affordable**, or **mixed-income at about 20–30% affordable**. Few projects land in between.
-- The 20–30% band matches the city's rules. In fact, policies like Mandatory Inclusionary Housing (MIH) and the 421-a / Affordable New York tax break require developers to set aside 25-30% of a building's units to be affordable and income-restricted.
-- Bigger projects tend to have a smaller affordable share.
+**Key Takeaways**
+
+- Projects fall into two groups: **100% affordable**, or **mixed-income at about 20–30% affordable**. Few projects land in between, which suggests developers aim at specific targets instead of choosing an affordable share freely.
+- The 20–30% band matches the city's rules. Policies like Mandatory Inclusionary Housing (MIH) and the 421-a / Affordable New York tax break require developers to set aside about 20–30% of a building's floor area or units as affordable, income-restricted housing. Most mixed-income buildings set aside the minimum the rules require.
+- Bigger projects tend to have a smaller affordable share. The relationship isn't a straight line, though, as the next point shows.
 - **Medium projects (11–100 units) are the most likely to be mixed-income:** only 31.5% are fully affordable, compared with 74.5% of small projects and 60.5% of large projects.
+  - Small projects are mostly 1-unit homeowner projects, which count as fully affordable.
+  - Many large projects are 100% affordable buildings financed directly by the city.
+  - Medium projects fall in between, where a lot of the mixed-income buildings are.
 
 ### Question 2: Which income levels receive the most units?
 
@@ -67,10 +72,13 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Paired Wilcoxon, Holm-adjusted | All 10 pairs p < 0.01 | Every pair of tiers differs; the closest pair is Extremely Low vs. Very Low (p = 0.002) |
 | Chi-square (program × tier) | χ²(12) = 73,021, p < 0.001, Cramér's V = 0.28 | Each program has a different tier mix (small to moderate effect) |
 
-- **Low income gets the largest share. Moderate income gets the smallest.**
+**Key Takeaways**
+
+- **Low income (51–80% AMI) gets the largest share at 34%. Moderate income gets the smallest at 6%.** "Low income" goes up to 80% of AMI, so the biggest group of units is not aimed at the city's poorest households.
+- Extremely Low and Very Low together get about 45% of units. That's a large share, but it's still less than half.
 - The mix depends on the program:
-  - **Multifamily Finance** serves the lowest incomes most: 56% of its units go to Extremely Low or Very Low.
-  - **Multifamily Incentives** (tax-incentive and inclusionary projects) puts **38% of its units in the Middle tier.** This fits 421-a options that allowed affordable units at up to 130% of AMI.
+  - **Multifamily Finance** serves the lowest incomes most: 56% of its units go to Extremely Low or Very Low. These projects get direct city funding, which makes deeper affordability possible.
+  - **Multifamily Incentives** (tax-incentive and inclusionary projects) puts **38% of its units in the Middle tier**, up to 165% of AMI. This fits 421-a options that allowed affordable units at up to 130% of AMI. A tax break alone covers less of the cost, so these projects lean toward higher incomes.
 
 ### Question 3: How do program groups differ in size?
 
@@ -90,5 +98,11 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 | Kruskal-Wallis (raw units) | χ²(3) = 4,653.2, p < 0.001 | Confirms the ANOVA result without assuming normality |
 | Multiple regression (log size ~ program + start year + extended affordability) | R² = 0.73, F(5, 5922) = 3,208, p < 0.001 | Program gaps hold after the controls (see the next table) |
 
-- **Program explains about 73% of the variation in project size** (Welch's ANOVA on log units, η² = 0.73). Every pair of programs differs (Tukey HSD), and Kruskal-Wallis confirms this without assuming normality.
-- After controlling for start year and extended affordability, the gaps barely change. Start year has no effect. Extended-affordability-only projects are about 48% larger.
+**Key Takeaways**
+
+- **Program type explains most of the difference in project size.** Every program differs from every other one, so the programs really build different kinds of projects.
+- **Multifamily Finance builds the biggest projects** (median 104 affordable units). **Homeowner Assistance projects are almost always 1 unit**, because they help individual homeowners instead of building apartments.
+- **Multifamily Incentives has a small median (9 units) but a very wide spread.** Most of its projects are small, but some have thousands of units.
+- **Small Homes has only 46 projects**, so its results are less certain than the other programs'.
+- The gaps between programs barely change after controlling for start year and extended affordability. Program, not timing, drives project size.
+- Start year has no effect: projects in the same program are about the same size now as in 2014. Extended-affordability-only projects are about 48% larger, possibly because these projects extend affordability in larger existing buildings.
