@@ -4,7 +4,7 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 
 ## Disclaimers
 
-- **Program and size are tangled together.** Homeowner Assistance projects are almost all 1-unit and 100% affordable, so they drive much of the "small projects are fully affordable" result. A next step is to rerun Q1 within each program.
+- **Program and size are tangled together.** Homeowner Assistance projects are mostly 1-unit (82%) and 100% affordable, so they drive much of the "small projects are fully affordable" result. A next step is to rerun Q1 within each program.
 - **With n = 5,928, almost every test is significant.** I report effect sizes (V, w, η², odds ratios) so the reader can judge how large each difference is.
 - **Unit counts are not people or rents.** A "low-income" unit at 80% AMI can still rent for more than many low-income households can pay.
 - **Preservation and new construction are counted together** In this dataset, so these numbers are not net new supply.
@@ -50,9 +50,9 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 - The 20–30% band matches the city's rules. Policies like Mandatory Inclusionary Housing (MIH) and the 421-a / Affordable New York tax break require developers to set aside about 20–30% of a building's floor area or units as affordable, income-restricted housing. Most mixed-income buildings set aside the minimum the rules require.
 - Bigger projects tend to have a smaller affordable share. The relationship isn't a straight line, though, as the next point shows.
 - **Medium projects (11–100 units) are the most likely to be mixed-income:** only 31.5% are fully affordable, compared with 74.5% of small projects and 60.5% of large projects.
-  - Small projects are mostly 1-unit homeowner projects, which count as fully affordable.
-  - Many large projects are 100% affordable buildings financed directly by the city.
-  - Medium projects fall in between, where a lot of the mixed-income buildings are.
+- 73% of small projects come from Homeowner Assistance, which is nearly always fully affordable.
+- Many large projects are 100% affordable buildings financed directly by the city.
+- Medium projects fall in between, where a lot of the mixed-income buildings are.
 
 ### Question 2: Which income levels receive the most units?
 
@@ -79,7 +79,7 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 - Extremely Low and Very Low together get about 45% of units. That's a large share, but it's still less than half.
 - The mix depends on the program:
   - **Multifamily Finance** serves the lowest incomes most: 56% of its units go to Extremely Low or Very Low. These projects get direct city funding, which makes deeper affordability possible.
-  - **Multifamily Incentives** (tax-incentive and inclusionary projects) puts **38% of its units in the Middle tier**, up to 165% of AMI. This fits 421-a options that allowed affordable units at up to 130% of AMI. A tax break alone covers less of the cost, so these projects lean toward higher incomes.
+  - **Multifamily Incentives** (tax-incentive and inclusionary projects) puts **38% of its units in the Middle tier, which is tied with Low tier**, up to 165% of AMI. This fits 421-a options that allowed affordable units at up to 130% of AMI. A tax break alone covers less of the cost, so these projects lean toward higher incomes.
 
 ### Question 3: How do program groups differ in size?
 
@@ -106,4 +106,3 @@ An analysis of **5,928 projects** in NYC's *Affordable Housing Production by Pro
 - **Multifamily Incentives has a small median (9 units) but a very wide spread.** Most of its projects are small, but some have thousands of units.
 - **Small Homes has only 46 projects**, so its results are less certain than the other programs'.
 - The gaps between programs barely change after controlling for start year and extended affordability. Program, not timing, drives project size.
-- Start year has no effect: projects in the same program are about the same size now as in 2014. Extended-affordability-only projects are about 48% larger, possibly because these projects extend affordability in larger existing buildings.
